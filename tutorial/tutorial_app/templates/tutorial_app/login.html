@@ -1,0 +1,14 @@
+{% extends "tutorial_app/index.html" %}
+
+{% block content %}
+  <h1>Login Existing User</h1>
+  <form class="" action="{% url 'tutorial_app:login' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="email" value="" placeholder="Email">
+    <input type="password" name="password" value="" placeholder="Password">
+    <button type="submit" name="button">Submit</button>
+  </form>
+  <div class="">
+    <p>Not a current user? Register <a href="{% url 'tutorial_app:register' %}">here</a></p>
+  </div>
+{% endblock %}
