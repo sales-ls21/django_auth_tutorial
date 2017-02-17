@@ -1,5 +1,13 @@
 {% extends 'tutorial_app/index.html' %}
-
+{% block style %}
+  <style media="screen">
+    #_giphy_tv {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+    }
+  </style>
+{% endblock %}
 {% block content %}
 <div id="_giphy_tv"></div>
 <script>
