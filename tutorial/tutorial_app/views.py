@@ -3,7 +3,7 @@ from django.views.generic.base import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, login, authenticate
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 
 # Create your views here.
 
