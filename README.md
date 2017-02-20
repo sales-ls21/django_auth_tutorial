@@ -1,1 +1,3 @@
-# django_auth_tutorial
+# Django Auth Tutorial
+
+Just an attempt to practice the magic that is Django user authorization and authentication. I forked this over from an exisiting repo, so you'll either need to do the same or clone it in order to see the result. Once you've done that, go ahead and run `python manage.py migrate` and then `python manage.py runserver`. You should be taken to a very basic login page. Since this isn't connected to a database, you'll need to perform the registration tasks. You can do that by clicking the register link and filling out the form. Once you click the `submit` button, you'll be taken through the magic and should see the success page. Logout takes you back to the home page. Pretty simple on the surface, magic under the hood. 
