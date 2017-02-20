@@ -1,14 +1,1 @@
-{% extends "tutorial_app/index.html" %}
 
-{% block content %}
-  <h1>Register New User</h1>
-  <form class="" action="{% url 'tutorial_app:register_user' %}" method="post">
-    {% csrf_token %}
-    <input type="text" name="email" value="" placeholder="Email">
-    <input type="password" name="password" value="" placeholder="Password">
-    <input type="text" name="first_name" value="" placeholder="Enter First Name">
-    <input type="text" name="last_name" value="" placeholder="Enter Last Name">
-    <button type="submit" name="button">Submit</button>
-  </form>
-
-{% endblock %}
