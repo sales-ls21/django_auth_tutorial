@@ -1,1 +1,11 @@
+{% extends 'tutorial_app/index.html' %}
 
+{% block content %}
+
+<form class="" action="{% url 'tutorial_app:login' %}" method="post">
+	<input type="text" name="username" value="" placeholder="Enter username">
+	{% csrf_token %}
+	<input type="text" name="password" value= "" placeholder="Enter password">
+</form>
+<p>Not a user? Register <a href="{% url 'tutorial_app:register' %}"> here</a></p>
+{% endblock %}
